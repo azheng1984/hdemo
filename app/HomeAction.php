@@ -8,14 +8,15 @@ class HomeAction {
         echo 'get~';
     }
 
-    public function post() {
+    public function post() { 
+    }
 
+    public function put() {
     }
 
     public function delete() {
-        
     }
-    
+
     public function after() {
         echo 'after~';
     }
