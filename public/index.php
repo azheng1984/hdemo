@@ -10,7 +10,7 @@ require HYPERFRAMEWORK_PATH . 'class_loader' . DIRECTORY_SEPARATOR .
     'lib' . DIRECTORY_SEPARATOR . 'ClassLoader.php';
 $CLASS_LOADER = new Hyperframework\ClassLoader;
 $CLASS_LOADER->run();
-$APP = new Hyperframework\Web\Application;
 $EXCEPTION_HANDLER = new Hyperframework\Web\ExceptionHandler;
 $EXCEPTION_HANDLER->run();
+$APP = new Hyperframework\Web\Application;
 $APP->run();
