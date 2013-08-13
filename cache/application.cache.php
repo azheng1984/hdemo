@@ -1,5 +1,7 @@
 <?php
 return array (
+  'namespace' => 'Hft\Application',
+  'paths' => array(
   '/' => 
   array (
     'Action' => 
@@ -38,5 +40,5 @@ return array (
     array (
       'class' => 'SubAction',
     ),
-  ),
+  ),),
 );

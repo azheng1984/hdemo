@@ -1,4 +1,6 @@
 <?php
+namespace Hft\Application;
+
 class HomeAction {
     public function before() {
         echo 'before';
