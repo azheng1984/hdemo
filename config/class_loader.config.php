@@ -4,7 +4,6 @@
 return array(
   'Hft\Application' => array(array('wow/Wow2.php', '@folder_mapping' => true), array('app_lib', '@folder_mapping' => true), 'app', array(HYPERFRAMEWORK_PATH . 'web/lib', '@folder_mapping' => true), '@folder_mapping' => false),
   'Hft' => array('lib'),
-//  'Hft\Application\Wow' => 'app_lib/Wow.php',
   'Hyperframework\Web' => HYPERFRAMEWORK_PATH . 'web/lib'
 );
 
