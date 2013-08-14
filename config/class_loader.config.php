@@ -2,7 +2,7 @@
 //return array('app', 'lib', HYPERFRAMEWORK_PATH.'web/lib');
 
 return array(
-  'Hft\Application' => array('app', '@folder_mapping' => false),
+  'Hft\Application' => array(array('app_lib', '@folder_mapping' => true), 'app', array(HYPERFRAMEWORK_PATH . 'web/lib', '@folder_mapping' => true), '@folder_mapping' => false),
   'Hft' => array('lib'),
   'Hyperframework\Web' => HYPERFRAMEWORK_PATH . 'web/lib'
 );
