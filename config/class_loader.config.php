@@ -1,6 +1,6 @@
 <?php
 //return array('app', 'lib', HYPERFRAMEWORK_PATH.'web/lib');
-
+//todo 如何指定 application 类?
 return array(
   'Hft\Application' => array(array('wow/Wow2.php', '@folder_mapping' => true), array('app_lib', '@folder_mapping' => true), 'app', array(HYPERFRAMEWORK_PATH . 'web/lib', '@folder_mapping' => true), '@folder_mapping' => false),
   'Hft' => array('lib'),
