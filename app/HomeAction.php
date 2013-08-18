@@ -10,7 +10,7 @@ class HomeAction {
         echo 'get~';
     }
 
-    public function post() { 
+    public function post() {
     }
 
     public function put() {
