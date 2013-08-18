@@ -1,44 +1,48 @@
 <?php
 return array (
-  'namespace' => 'Hft\Application',
-  'paths' => array(
-  '/' => 
+  'namespace' => 'Hft\\Application',
+  'paths' => 
   array (
-    'Action' => 
+    '/' => 
     array (
-      'namespace' => '\XXXX',
-      'class' => 'HomeAction',
-      'methods' => 
+      'Action' => 
       array (
-        'GET' => true,
+        'class' => 'HomeAction',
+        'methods' => 
+        array (
+          'GET' => true,
+          'POST' => true,
+          'PUT' => true,
+          'DELETE' => true,
+        ),
+        'before_filter' => true,
+        'after_filter' => true,
       ),
-      'before_filter' => true,
-      'after_filter' => true,
+      'View' => 
+      array (
+        'Screen' => 'HomeScreen',
+      ),
     ),
-    'View' => 
+    '/error/internal_server_error' => 
     array (
-      'Screen' => 'HomeScreen',
+      'View' => 
+      array (
+        'Screen' => 'InternalServerErrorScreen',
+      ),
+    ),
+    '/error/not_found' => 
+    array (
+      'View' => 
+      array (
+        'Screen' => 'NotFoundScreen',
+      ),
+    ),
+    '/hi/sub' => 
+    array (
+      'Action' => 
+      array (
+        'class' => 'SubAction',
+      ),
     ),
   ),
-  '/error/internal_server_error' => 
-  array (
-    'View' => 
-    array (
-      'Screen' => 'InternalServerErrorScreen',
-    ),
-  ),
-  '/error/not_found' => 
-  array (
-    'View' => 
-    array (
-      'Screen' => 'NotFoundScreen',
-    ),
-  ),
-  '/hi/sub' => 
-  array (
-    'Action' => 
-    array (
-      'class' => 'SubAction',
-    ),
-  ),),
 );

@@ -8,7 +8,7 @@ return array(
       //'Test\Test3' => array('app_lib/Test3', '@exclude' => true),//独立声明
       'app',
       //array(HYPERFRAMEWORK_PATH . 'web/lib', '@folder_mapping' => true),
-      //'@folder_mapping' => false
+      '@folder_mapping' => false
   ),
   'Hft' => array('lib'),
   'Hyperframework\Web' => HYPERFRAMEWORK_PATH . 'web/lib'

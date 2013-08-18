@@ -2,6 +2,7 @@
 //chdir('..');
 //echo `hf build`;
 //chdir('public');
+//print_r(array(1 + 1, 'a' .'b', rand()));
 define('ROOT_PATH', dirname(__DIR__) . DIRECTORY_SEPARATOR);
 define('CACHE_PATH', ROOT_PATH . 'cache' . DIRECTORY_SEPARATOR);
 define('CONFIG_PATH', ROOT_PATH . 'config' . DIRECTORY_SEPARATOR);
@@ -14,3 +15,4 @@ $EXCEPTION_HANDLER = new Hyperframework\Web\ExceptionHandler;
 $EXCEPTION_HANDLER->run();
 $APP = new Hyperframework\Web\Application;
 $APP->run();
+phpinfo();
