@@ -15,4 +15,3 @@ $EXCEPTION_HANDLER = new Hyperframework\Web\ExceptionHandler;
 $EXCEPTION_HANDLER->run();
 $APP = new Hyperframework\Web\Application;
 $APP->run();
-phpinfo();

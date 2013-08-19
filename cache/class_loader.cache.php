@@ -2,7 +2,7 @@
 return array (
   'Hft' => 
   array (
-    0 => '/srv/www/lib',
+    0 => '/srv/www/localhost3/lib',
     'Application' => 
     array (
       '@classes' => 
@@ -24,11 +24,11 @@ return array (
         array (
           0 => 
           array (
-            0 => '/srv/www/wow',
+            0 => '/srv/www/localhost3/wow',
           ),
           1 => 
           array (
-            0 => '/srv/www/app_lib',
+            0 => '/srv/www/localhost3/app_lib',
           ),
           2 => 
           array (
@@ -42,7 +42,7 @@ return array (
           ),
           4 => 
           array (
-            0 => '/srv/www/app',
+            0 => '/srv/www/localhost3/app',
           ),
           5 => 
           array (
