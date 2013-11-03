@@ -1,9 +1,9 @@
 <?php
 namespace Yxj;
 
-const ENV = 'dev-linux';
+const ENV = 'development';
 const HYPERFRAMEWORK_PATH =
-    '/home/azheng/daoxila_www/vendor/hf/lib/Hyperframework/';
+    '/home/az/daoxila_www/vendor/hf/lib/Hyperframework/';
 require HYPERFRAMEWORK_PATH . 'Config.php';
 //\Hyperframework\Config::set(
 //    ['Hyperframework\Env', ENV],

@@ -1,7 +1,7 @@
 <?php
 namespace Yxj;
 
-define('Yxj\ROOT_PATH', dirname(__DIR__) . DIRECTORY_SEPARATOR);
+define(__NAMESPACE__ . '\ROOT_PATH', dirname(__DIR__) . DIRECTORY_SEPARATOR);
 require ROOT_PATH . 'lib' . DIRECTORY_SEPARATOR .
-    'Yxj' . DIRECTORY_SEPARATOR . 'Runner.php';
+    __NAMESPACE__ . DIRECTORY_SEPARATOR . 'Runner.php';
 Runner::run();

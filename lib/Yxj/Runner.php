@@ -21,5 +21,6 @@ class Runner {
         require HYPERFRAMEWORK_PATH . 'ClassLoader.php';
         \Hyperframework\ClassLoader::run();
         \Hyperframework\Web\ExceptionHandler::run();
+        
     }
 }
