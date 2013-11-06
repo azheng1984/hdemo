@@ -3,6 +3,9 @@ namespace Yxj\Routing;
 
 class Router {
     public static function execute() {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['_method'])) {
+            $_SERVER['REQUEST_METHOD'] = $_POST['_method'];
+        }
         if ($_SERVER['SERVER_NAME'] !== $_SERVER['HTTP_HOST']) {
             header(
                 'Location: http://' . $_SERVER['SERVER_NAME'] .
