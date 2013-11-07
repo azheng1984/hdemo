@@ -5,11 +5,11 @@ use Yxj\Biz\Product;
 use Yxj\Db\DbProduct;
 
 class Html extends \Yxj\View\Html {
-    private $categoryList;
+    private $categories;
 
     protected function renderHtmlHeadContent() {
         $result = \Yxj\Biz\Product::logic();
-        $data = \Yxj\Db\DbProduct::getById($id);
+        $product = \Yxj\Db\DbProduct::getById($id);
         echo '<title>优选集 - 品牌消费社区</title>';
         $this->categoryList = Db::getAll(
             'SELECT * FROM category WHERE parent_id = 0 AND is_active = 1'
@@ -64,7 +64,7 @@ class Html extends \Yxj\View\Html {
     private function renderLocationList() {
         echo '<div>品牌发源地</div>';
         echo '<div><a href="/location/new">添加</a></div>';
-        $locationList = Db::getAll(
+        $locations = Db::getAll(
             'SELECT * FROM location WHERE parent_id = 0 AND is_active = 1',
             ' ORDER BY pinyin DESC'
         );

@@ -4,6 +4,7 @@ namespace Yxj;
 class Runner {
     public static function run() {
         static::initialize();
+        static::rewriteMethod();
         $path = Routing\Router::execute();
         //TODO: 测试是否存在 session_id 的 cookie，如果存在，打开 session
         if ($path !== null) {
@@ -19,7 +20,6 @@ class Runner {
         require HYPERFRAMEWORK_PATH . DIRECTORY_SEPARATOR . 'ClassLoader.php';
         \Hyperframework\ClassLoader::run();
         \Hyperframework\Web\ExceptionHandler::run();
-        static::rewriteMethod();
     }
 
     private static function rewriteMethod() {
