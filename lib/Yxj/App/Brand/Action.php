@@ -1,7 +1,7 @@
 <?php
-namespace YouXuanJi\Web\Brand;
+namespace YouXuanJi\App\Web\Brand;
 
-use Hyperframework\Db\Client as DbClient;
+use Hyperframework\Db\DbClient;
 
 class BrandAction {
     public function delete() {
@@ -12,7 +12,7 @@ class BrandAction {
             //delete all category link
             //delete location link
             DbClient::commit();
-        } catch (Exception $exception) {
+        } catch (\Exception $exception) {
             DbClient::rollback();
         }
     }
