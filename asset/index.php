@@ -1,11 +1,7 @@
 <?php
 namespace Yxj;
 
-function run() {
-    $rootPath = dirname(__DIR__) . DIRECTORY_SEPARATOR;
-    require $rootPath . 'lib' . DIRECTORY_SEPARATOR . 'Bootstrap.php';
-    Bootstrap::run($rootPath);
-    //get asset...
-}
-
-run();
+define(__NAMESPACE__ . '\ROOT_PATH', dirname(__DIR__));
+require ROOT_PATH . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR .
+    __NAMESPACE__ . DIRECTORY_SEPARATOR . 'Runner.php';
+Runner::runAssetProxy();

@@ -2,7 +2,7 @@
 namespace Yxj;
 
 class Runner {
-    public static function run() {
+    public static function runApp() {
         static::initialize();
         static::rewriteMethod();
         $path = Routing\Router::execute();
@@ -10,6 +10,11 @@ class Runner {
         if ($path !== null) {
             \Hyperframework\Web\Application::run($path);
         }
+    }
+
+    public static function runAssetProxy() {
+        static::initialize();
+        \Hyperframework\Web\AssetProxy::run();
     }
 
     private static function initialize() {
