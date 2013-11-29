@@ -4,7 +4,7 @@ namespace Yxj\App;
 use Yxj\Biz\Product;
 use Yxj\Db\DbProduct;
 
-class View extends \Yxj\View\Html {
+class Html extends \Yxj\View\Html {
     private $categories;
 
     protected function renderHtmlHeadContent() {
