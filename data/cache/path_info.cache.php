@@ -2,6 +2,6 @@
 return [
     'namespace' => 'Yxj\App',
     'paths' => [
-        '/' => ['View' => 'View']
+        '/' => ['View' => 'Html']
     ]
 ];
