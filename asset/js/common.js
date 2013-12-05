@@ -1,1 +1,2 @@
-alert('hello from common.js');
+//require
+alert('hi from common.js');
