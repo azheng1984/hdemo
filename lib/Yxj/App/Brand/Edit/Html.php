@@ -1,7 +1,8 @@
 <?php
-class BrandEditScreen {
-  public function __construct() {
-  }
+namespace Yxj\App\Brand\Edit;
+
+class Html {
+  public function __construct() {}
 
   public function render() {
     echo '修改品牌';
