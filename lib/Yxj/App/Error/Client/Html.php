@@ -1,5 +1,7 @@
 <?php
-class InternalServerErrorScreen {
+namespace Yxj\App\Error\Client;
+
+class Html {
   public function render() {
     if ($GLOBALS['EXCEPTION_HANDLER']->getException() === null) {
       throw new NotFoundException;

@@ -1,5 +1,7 @@
 <?php
-class NotFoundScreen {
+namespace Yxj\App\Error\Server;
+
+class Html {
   public function render() {
     if ($GLOBALS['EXCEPTION_HANDLER']->getException() === null) {
       throw new NotFoundException;
