@@ -1,5 +1,6 @@
 <?php
 namespace Yxj\View;
+use \Hyperframework\Web\View\Asset;
 
 class Html {
     public function render() {
@@ -8,8 +9,9 @@ class Html {
             'Hyperframework\Web\View\Asset\CacheVersionEnabled', true
         );
         echo '<html><head></head>';
-        echo '<body><script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>';
-        \Hyperframework\Web\View\Asset::renderJsLink('common');
+        echo '<body>';
+        Asset::renderJsLink('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
+        Asset::renderJsLink('common');
         echo '</body></html>';
         // /asset/js/yxj/common.js
         /*
