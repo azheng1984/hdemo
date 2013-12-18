@@ -3,10 +3,13 @@ namespace Yxj\App;
 
 use Yxj\Biz\Product;
 use Yxj\Db\DbProduct;
-echo 'hi';
 
 class Html extends \Yxj\View\Html {
     private $categories;
+
+//    public function render() {
+//        echo 'hi';
+//    }
 
     protected function renderHtmlHeadContent() {
         $result = \Yxj\Biz\Product::logic();

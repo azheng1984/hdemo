@@ -1,17 +1,20 @@
 <?php
 namespace Yxj\View;
-use \Hyperframework\Web\View\Asset;
+use \Hyperframework\Web\View\Asset\AssetUrl;
 
 class Html {
     public function render() {
         //default js namespace js/yxj
         \Hyperframework\Config::set(
-            'Hyperframework\Web\View\Asset\CacheVersionEnabled', true
+            'Hyperframework\Web\View\Asset\AssetUrl\CacheVersionEnabled', true
         );
         echo '<html><head></head>';
         echo '<body>';
-        Asset::renderJsLink('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
-        Asset::renderJsLink('common');
+        echo AssetUrl::get('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1.js');
+        echo "\n";
+        echo AssetUrl::get('common.js');
+        echo "\n";
+        echo AssetUrl::get('one');
         echo '</body></html>';
         // /asset/js/yxj/common.js
         /*

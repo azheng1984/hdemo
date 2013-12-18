@@ -2,6 +2,6 @@
 return array(
     'namespace' => 'Yxj\App',
     'paths' =>array( 
-        '/' => array('View' => 'Html')
+        '/' => array('view' => 'Html')
     )
 );
