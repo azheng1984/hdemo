@@ -1,12 +1,13 @@
 <?php
 namespace Yxj\View;
+
 use \Hyperframework\Web\View\Asset\AssetUrl;
 
 class Html {
     public function render() {
         //default js namespace js/yxj
         \Hyperframework\Config::set(
-            'Hyperframework\Web\View\Asset\AssetUrl\CacheVersionEnabled', true
+            'Hyperframework\Web\CacheVersionEnabled', true
         );
         echo '<html><head></head>';
         echo '<body>';
@@ -16,6 +17,15 @@ class Html {
         echo "\n";
         echo AssetUrl::get('one');
         echo '</body></html>';
+
+        self::renderAppCssLink();
+
+        self::setAppCssManifest('util.js', '');
+        self::addAppCssUrl();
+/*'application.js', array(
+            'detail' => array('util.js', 'hi.js')
+        ));
+ */
         // /asset/js/yxj/common.js
         /*
         echo '<script src="/js/xyj/common.js"></script>';
