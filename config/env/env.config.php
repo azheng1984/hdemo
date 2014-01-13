@@ -2,9 +2,8 @@
 namespace Yxj;
 
 const ENV = 'development';
-const HYPERFRAMEWORK_PATH =
-    '/home/azheng/daoxila_www/vendor/hf/lib/Hyperframework/';
-require HYPERFRAMEWORK_PATH . 'Config.php';
+const HYPERFRAMEWORK_PATH = '/home/azheng/daoxila_www/vendor/hf/lib';
+require HYPERFRAMEWORK_PATH . '/Hyperframework/Config.php';
 //\Hyperframework\Config::set(
 //    ['Hyperframework\AppEnv', ENV],
 //    ['Hyperframework\Web\PathInfo\CacheEnabled', false],

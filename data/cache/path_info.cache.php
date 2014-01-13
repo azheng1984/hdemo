@@ -1,7 +1,7 @@
 <?php
 return array(
     'namespace' => 'Yxj\App',
-    'paths' =>array( 
-        '/' => array('view' => 'Html')
+    'paths' =>array(
+        '/' => array('views' => 'Html')
     )
 );
