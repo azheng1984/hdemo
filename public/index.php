@@ -1,5 +1,9 @@
 <?php
-namespace Yxj;
+namespace Yxj\Article\Add;
+
+var_dump(array('hi' => require __DIR__ . '/robots.txt' ));
+var_dump(array('hi' => 123));
+exit;
 
 define(__NAMESPACE__ . '\ROOT_PATH', dirname(__DIR__));
 require ROOT_PATH . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR
